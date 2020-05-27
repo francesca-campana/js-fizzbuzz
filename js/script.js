@@ -20,6 +20,6 @@ for (var i = 1; i <= 100; ++i) {
       // console.log(i);
 
     }
-    elementoLista.innerHTML += '<li>' + intruso  + '<li>';
+    elementoLista.innerHTML += '<li>' + intruso  + '</li>';
 
   }
