@@ -2,19 +2,24 @@
 // ma per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi Buzz.
 // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
-
+var elementoLista = document.getElementById('lista');
 for (var i = 1; i <= 100; ++i) {
-
+  var intruso = i;
   if (i % 15 === 0 ) {
-  console.log('FizzBuzz');
+  // console.log('FizzBuzz');
+  intruso = 'FizzBuzz';
 
     } else if (i % 3 === 0 ) {
-      console.log('Fizz');
-
-    }else if (i % 5 === 0 ) {
-      console.log('Buzz');
+      // console.log('Fizz');
+      intruso = 'Fizz';
+    } else if (i % 5 === 0 ) {
+      // console.log('Buzz');
+      intruso = 'Buzz';
 
     } else {
-      console.log(i);
+      // console.log(i);
+
     }
+    elementoLista.innerHTML += '<li>' + intruso  + '<li>';
+
   }
